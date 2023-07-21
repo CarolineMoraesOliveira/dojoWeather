@@ -1,0 +1,120 @@
+/* CSS reset */
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navBar*/
+
+.navBar {
+    background-color: dodgerblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 230px;
+    padding-left: 230px;
+    font-family: cursive;
+    height: 80px;
+}
+h1 {
+    font-size: xx-large;
+}
+.cities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+a {
+    color: white;
+}
+
+/**** BOTTOM ****/
+/** UP BOTTOM **/
+
+.bottom {
+    padding-right: 230px;
+    padding-left: 230px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.city {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: 2px solid black;
+}
+.celsius {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+
+/* MIDDLE BOTTOM */
+
+.sunOrRain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.weatherBox {
+    background-color: #E6E6FA;
+    width: 220px;
+    height: 300px;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 25px;
+
+}
+.temperature {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+#red {
+    color: red;
+}
+#blue {
+    color: blue;
+}
+img {
+    border-radius: 50%;
+    padding: 10px;
+}
+#red::after, #blue::after {
+    content: "°";
+}
+
+/* BOTTOM DOWN */
+
+.cookie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin-top: 20px;
+    position: fixed;
+    margin-right: 230px;
+}
+#text {
+    width: 350px;
+}
+h4 {
+    font-weight: lighter;
+}
+button {
+    width: 100px;
+    padding: 5px;
+    background-color:darkturquoise;
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
