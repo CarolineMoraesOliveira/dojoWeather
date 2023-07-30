@@ -2,6 +2,7 @@ console.log ('Running main.js');
 
 // function to alert the chosen city //
 
+
 function burbank() {
     alert("Loading weather report to Burbank!");
 }
@@ -24,18 +25,33 @@ function disappear() {
 
 // function to convert the temperature // not finished!!!!!
 
-var y = [document.querySelectorAll('#red, #blue')];
-var celsiusT = [24,18,27,19,21,16,26,21];
-var farenT = [celsiusT[temp] * 1.8 + 32];
 
-function change(element) {
-    var temp = 0; temp <=8; temp++;
 
-    if (element.value == "°C") {
-        y.innerText = y;
+function changeT(element) {
+    console.log(element.value);
+
+    if ((element.value) === "°F"){
+        var tempValues = document.querySelectorAll('#red, #blue, #red1, #blue1, #red2, #blue2, #red3, #blue3');
+        for (var i=0; i< 9; i++){
+        var tempF= Math.round((tempValues[i].innerText) * 1.8 + 32);
+            tempValues[i].innerText = tempF;
+        }
+        console.log(tempF);
     }
     else {
-        y.innerText = farenT;
+        var tempValues = document.querySelectorAll('#red, #blue, #red1, #blue1, #red2, #blue2, #red3, #blue3');
+        for (var i=0; i< 9; i++){
+        var tempC= Math.round(((tempValues[i].innerText)-32) * 5/9);
+            tempValues[i].innerText = tempC;
+        }
+       console.log(tempC);
     }
 }
 
+    
+
+
+
+
+
+  
